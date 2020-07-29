@@ -59,9 +59,7 @@ const Contact = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":
-          "https://gallant-curie-314d7c.netlify.app/",
-        Vary: "Origin",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         name: e.target.name.value,
