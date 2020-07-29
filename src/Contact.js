@@ -96,7 +96,11 @@ const Contact = () => {
         item
         xs={12}
         name="contactme"
-        style={{ padding: "15vh", background: "#2c3e50" }}
+        style={{
+          paddingTop: "15vh",
+          paddingBottom: "15vh",
+          background: "#2c3e50",
+        }}
       >
         <ThemeProvider theme={theme}>
           <Typography
