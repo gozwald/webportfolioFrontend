@@ -57,7 +57,6 @@ const App = () => {
       <InView threshold={THRESHOLD} onChange={(e, entry) => handleWelcome(e)}>
         <Welcome />
       </InView>
-
       <Navbar about={about} home={home} projects={projects} contact={contact} />
 
       <InView threshold={THRESHOLD} onChange={(e, entry) => handleAbout(e)}>

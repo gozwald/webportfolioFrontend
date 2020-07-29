@@ -6,8 +6,6 @@ function Back() {
     <Particles
       style={{
         backgroundColor: "#2c2e43",
-        heigth: "100vh",
-        width: "100vw",
         position: "absolute",
         top: 0,
         zIndex: "-1",
