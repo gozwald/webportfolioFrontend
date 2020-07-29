@@ -60,6 +60,8 @@ const Contact = () => {
       mode: "cors",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":
+          "https://gallant-curie-314d7c.netlify.app/",
       },
       body: JSON.stringify({
         name: e.target.name.value,
