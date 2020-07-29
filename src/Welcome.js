@@ -13,6 +13,7 @@ import { Link } from "react-scroll";
 const useStyles = makeStyles(() => ({
   home: {
     height: "100vh",
+    width: "100vw",
   },
   deadCenterColumn: {
     display: "flex",
