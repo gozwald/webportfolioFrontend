@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import Back from "./Back";
+// import Back from "./Back";
 import { InView } from "react-intersection-observer";
 
 const App = () => {
@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <>
-      <Back />
+      {/* <Back /> */}
       <InView threshold={THRESHOLD} onChange={(e, entry) => handleWelcome(e)}>
         <Welcome />
       </InView>

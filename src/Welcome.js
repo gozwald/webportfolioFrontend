@@ -9,11 +9,12 @@ import {
   responsiveFontSizes,
 } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
+import Back from "./Back";
 
 const useStyles = makeStyles(() => ({
   home: {
+    display: "flex",
     height: "100vh",
-    // width: "100vw",
   },
   deadCenterColumn: {
     display: "flex",
@@ -37,12 +38,15 @@ const Welcome = () => {
   const classes = useStyles();
   return (
     <>
+      <Back />
       <Grid
         name="home"
         justify="center"
         alignItems="center"
         container
         className={classes.home}
+        item
+        xs={12}
       >
         <Grid item xs={8}>
           <ThemeProvider theme={theme}>
