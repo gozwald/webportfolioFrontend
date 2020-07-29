@@ -13,7 +13,7 @@ const App = () => {
   const [contact, setContact] = useState(false);
   const [projects, setProjects] = useState(false);
 
-  const THRESHOLD = [0.5]; // Store multiple thresholds in a constant
+  const THRESHOLD = [0.5];
 
   const handleWelcome = (e) => {
     if (e) {
