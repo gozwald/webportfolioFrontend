@@ -60,6 +60,7 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
+        redirect: "follow",
       },
       body: JSON.stringify({
         name: e.target.name.value,
