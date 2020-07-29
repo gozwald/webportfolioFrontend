@@ -57,6 +57,7 @@ const Contact = () => {
 
     fetch("https://personalportfoliobackend.herokuapp.com/email/", {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/json",
       },
