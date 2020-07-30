@@ -24,6 +24,20 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     padding: "20px",
   },
+  desImages: {
+    width: "150px",
+    paddingBottom: "2vh",
+    "@media (max-width: 600px)": {
+      width: "100%",
+      padding: "20px",
+    },
+  },
+  mainContainer: {
+    padding: "90px",
+    "@media (max-width: 600px)": {
+      padding: "90px 0px 20px 0px",
+    },
+  },
 }));
 
 let theme = createMuiTheme();
@@ -37,7 +51,7 @@ const About = () => {
       alignItems="center"
       container
       name="about"
-      style={{ padding: "10vh" }}
+      className={classes.mainContainer}
     >
       <Grid item xs={12}>
         <ThemeProvider theme={theme}>
@@ -48,44 +62,32 @@ const About = () => {
       </Grid>
       <Grid container item xs={10} style={{ paddingBottom: "6vh" }}>
         <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
-          <img
-            width="40%"
-            alt="me"
-            src="/images/draw.png"
-            style={{ paddingBottom: "2vh" }}
-          />
+          <img className={classes.desImages} alt="me" src="/images/draw.png" />
           <div>
             <b>Detail Oriented</b>
           </div>
         </Grid>
         <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
           <img
-            width="40%"
+            className={classes.desImages}
             alt="me"
             src="/images/search.png"
-            style={{ paddingBottom: "2vh" }}
           />
           <div>
             <b>Resourceful</b>
           </div>
         </Grid>
         <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
-          <img
-            width="40%"
-            alt="me"
-            src="/images/idea.png"
-            style={{ paddingBottom: "2vh" }}
-          />
+          <img className={classes.desImages} alt="me" src="/images/idea.png" />
           <div>
             <b>Analytical</b>
           </div>
         </Grid>
         <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
           <img
-            width="40%"
+            className={classes.desImages}
             alt="me"
             src="/images/agreement.png"
-            style={{ paddingBottom: "2vh" }}
           />
           <div>
             <b>Team Player</b>
@@ -96,7 +98,7 @@ const About = () => {
         <Grid container item xs={4}>
           <div className={classes.deadCenterColumn}>
             <img
-              width="60%"
+              width="65%"
               alt="me"
               src="/images/me.webp"
               style={{ paddingBottom: "3vh" }}
