@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
   mainContainer: {
     padding: "90px",
     "@media (max-width: 1000px)": {
-      padding: "90px 0px 20px 0px",
+      padding: "90px 0px 0px 0px",
     },
   },
 }));
@@ -94,8 +94,8 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
-      <Grid container item xs={11}>
-        <Grid container item xs={4}>
+      <Grid container item xs={12} sm={10}>
+        <Grid container item xs={12} sm={4}>
           <div className={classes.deadCenterColumn}>
             <img
               width="65%"
@@ -115,7 +115,7 @@ const About = () => {
             </div>
           </div>
         </Grid>
-        <Grid container item xs={8}>
+        <Grid container item xs={12} sm={8}>
           <InView triggerOnce>
             {({ inView, ref, entry }) => (
               <div style={{ width: "100%" }} ref={ref}>
