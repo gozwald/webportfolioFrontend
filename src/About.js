@@ -28,8 +28,14 @@ const useStyles = makeStyles(() => ({
     width: "150px",
     paddingBottom: "2vh",
     "@media (max-width: 820px)": {
-      width: "100%",
       padding: "20px",
+    },
+  },
+  profilePic: {
+    paddingBottom: "3vh",
+    width: "250px",
+    "@media (max-width: 820px)": {
+      padding: "40px",
     },
   },
   mainContainer: {
@@ -95,13 +101,13 @@ const About = () => {
         </Grid>
       </Grid>
       <Grid container item xs={12} sm={10}>
-        <Grid container item xs={12} sm={4}>
+        <Grid container item xs={12} md={4}>
           <div className={classes.deadCenterColumn}>
             <img
-              width="65%"
+              className={classes.profilePic}
+              // width="65%"
               alt="me"
               src="/images/me.webp"
-              style={{ paddingBottom: "3vh" }}
             />
 
             <Typography variant="h4" className={classes.deadCenterColumn}>
@@ -115,7 +121,7 @@ const About = () => {
             </div>
           </div>
         </Grid>
-        <Grid container item xs={12} sm={8}>
+        <Grid container item xs={12} md={8}>
           <InView triggerOnce>
             {({ inView, ref, entry }) => (
               <div style={{ width: "100%" }} ref={ref}>
