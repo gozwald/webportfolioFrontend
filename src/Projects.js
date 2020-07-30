@@ -34,11 +34,10 @@ const useStyles = makeStyles((theme) => ({
     height: "35vh",
     width: "100%",
   },
-  profilePic: {
-    paddingBottom: "3vh",
-    width: "250px",
-    "@media (max-width: 820px)": {
-      padding: "30px",
+  mainContainer: {
+    padding: "90px",
+    "@media (max-width: 1000px)": {
+      padding: "90px 0px 0px 0px",
     },
   },
 }));
@@ -49,7 +48,7 @@ theme = responsiveFontSizes(theme);
 const Projects = () => {
   const classes = useStyles();
   return (
-    <Grid name="projects" style={{ padding: "10vh" }}>
+    <Grid name="projects" className={classes.mainContainer}>
       <ThemeProvider theme={theme}>
         <Grid item xs={12}>
           <Typography variant="h2" className={classes.deadCenterColumn}>
