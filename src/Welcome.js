@@ -13,8 +13,9 @@ import Back from "./Back";
 
 const useStyles = makeStyles(() => ({
   home: {
-    display: "flex",
+    // display: "flex",
     height: "100vh",
+    width: "100vw",
   },
   deadCenterColumn: {
     display: "flex",
@@ -38,7 +39,6 @@ const Welcome = () => {
   const classes = useStyles();
   return (
     <>
-      <Back />
       <Grid
         name="home"
         justify="center"
@@ -48,6 +48,7 @@ const Welcome = () => {
         item
         xs={12}
       >
+        <Back />
         <Grid item xs={8}>
           <ThemeProvider theme={theme}>
             <Typography variant="h2" className={classes.deadCenterColumn}>
