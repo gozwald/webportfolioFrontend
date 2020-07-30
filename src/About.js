@@ -27,14 +27,14 @@ const useStyles = makeStyles(() => ({
   desImages: {
     width: "150px",
     paddingBottom: "2vh",
-    "@media (max-width: 600px)": {
+    "@media (max-width: 820px)": {
       width: "100%",
       padding: "20px",
     },
   },
   mainContainer: {
     padding: "90px",
-    "@media (max-width: 600px)": {
+    "@media (max-width: 1000px)": {
       padding: "90px 0px 20px 0px",
     },
   },
@@ -61,13 +61,13 @@ const About = () => {
         </ThemeProvider>
       </Grid>
       <Grid container item xs={10} style={{ paddingBottom: "6vh" }}>
-        <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
+        <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
           <img className={classes.desImages} alt="me" src="/images/draw.png" />
           <div>
             <b>Detail Oriented</b>
           </div>
         </Grid>
-        <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
+        <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
           <img
             className={classes.desImages}
             alt="me"
@@ -77,13 +77,13 @@ const About = () => {
             <b>Resourceful</b>
           </div>
         </Grid>
-        <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
+        <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
           <img className={classes.desImages} alt="me" src="/images/idea.png" />
           <div>
             <b>Analytical</b>
           </div>
         </Grid>
-        <Grid item md={3} xs={6} className={classes.deadCenterColumn}>
+        <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
           <img
             className={classes.desImages}
             alt="me"
