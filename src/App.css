@@ -191,6 +191,47 @@ li.slider {
     width: 65%;
   }
 }
+@media (max-width: 958px) {
+  .skillscontainer {
+    width: 100%;
+    height: 100%;
+    padding: 0 8vw 0 8vw;
+  }
+  .skillscontainer li {
+    position: relative;
+    list-style: none;
+    margin: 0px 0px 20px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: -10;
+  }
+  .skillscontainer li:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 25px;
+    background-color: hsla(162, 59%, 58%, 0.5);
+    border-radius: 1000px;
+    z-index: -10;
+  }
+
+  .skillscontainer li:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 0;
+    height: 25px;
+    background-color: hsla(162, 53%, 43%, 0.5);
+    border-radius: 1000px;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    z-index: -10;
+  }
+}
 
 .bg,
 .overlay {

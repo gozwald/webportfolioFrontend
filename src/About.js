@@ -35,7 +35,12 @@ const useStyles = makeStyles(() => ({
     paddingBottom: "3vh",
     width: "250px",
     "@media (max-width: 820px)": {
-      padding: "40px",
+      padding: "30px",
+    },
+  },
+  aboutmeText: {
+    "@media (max-width: 1000px)": {
+      padding: "30px",
     },
   },
   mainContainer: {
@@ -43,6 +48,11 @@ const useStyles = makeStyles(() => ({
     "@media (max-width: 1000px)": {
       padding: "90px 0px 0px 0px",
     },
+  },
+  skillContainer: {
+    width: "100%",
+    height: "100%",
+    padding: "0 8vw 0 8vw",
   },
 }));
 
@@ -100,12 +110,11 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
-      <Grid container item xs={12} sm={10}>
-        <Grid container item xs={12} md={4}>
+      <Grid container item xs={12} md={10}>
+        <Grid item xs={12} md={4}>
           <div className={classes.deadCenterColumn}>
             <img
               className={classes.profilePic}
-              // width="65%"
               alt="me"
               src="/images/me.webp"
             />
@@ -114,14 +123,14 @@ const About = () => {
               What is this human?
             </Typography>
             <br></br>
-            <div>
+            <div className={classes.aboutmeText}>
               My name is Sam and I come from Toronto, Canada. <br></br> I'm a
               junior full stack web developer on a mission to get dirty hands
-              and squaky clean code.
+              and squeaky clean code.
             </div>
           </div>
         </Grid>
-        <Grid container item xs={12} md={8}>
+        <Grid item xs={12} md={8}>
           <InView triggerOnce>
             {({ inView, ref, entry }) => (
               <div style={{ width: "100%" }} ref={ref}>
