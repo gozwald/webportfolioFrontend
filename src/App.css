@@ -208,6 +208,9 @@ li.slider {
   }
 }
 @media (max-width: 958px) {
+  .menu {
+    height: 45px;
+  }
   .skillscontainer {
     width: 100%;
     height: 100%;
