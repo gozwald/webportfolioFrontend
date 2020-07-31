@@ -52,10 +52,26 @@
   font-size: 18px;
   z-index: 9;
 }
-.menu div.active {
-  background-color: #e74c3c;
+.menu :nth-child(1) div.active {
+  background-color: #3498db;
   pointer-events: none;
 }
+
+.menu :nth-child(2) div.active {
+  background-color: #9b59b6;
+  pointer-events: none;
+}
+
+.menu :nth-child(3) div.active {
+  background-color: #e67e22;
+  pointer-events: none;
+}
+
+.menu :nth-child(4) div.active {
+  background-color: #16a085;
+  pointer-events: none;
+}
+
 li.slider {
   width: 25%;
   height: 100%;
