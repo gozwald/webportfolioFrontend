@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "250px",
     width: "100%",
+    "@media (max-width: 1000px)": {
+      height: "200px",
+    },
   },
   headerText: {
     display: "flex",
