@@ -43,6 +43,12 @@ const useStyles = makeStyles(() => ({
       padding: "30px",
     },
   },
+  headerText: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "40px",
+  },
   mainContainer: {
     padding: "90px",
     "@media (max-width: 1000px)": {
@@ -72,7 +78,14 @@ const About = () => {
       <Grid item xs={12}>
         <ThemeProvider theme={theme}>
           <Typography variant="h2" className={classes.deadCenterColumn}>
-            About<br></br>¯¯¯
+            <div className={classes.headerText}>
+              <div>About</div>
+              <img
+                src="./images/line.png"
+                alt="solid line"
+                style={{ width: "70px", height: "10px" }}
+              />
+            </div>
           </Typography>
         </ThemeProvider>
       </Grid>

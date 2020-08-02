@@ -31,13 +31,19 @@ const useStyles = makeStyles((theme) => ({
   },
   cardprop: {
     display: "flex",
-    height: "35vh",
+    height: "250px",
     width: "100%",
+  },
+  headerText: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "40px",
   },
   mainContainer: {
     padding: "90px",
     "@media (max-width: 1000px)": {
-      padding: "90px 0px 0px 0px",
+      padding: "90px 30px 0px 30px",
     },
   },
 }));
@@ -52,8 +58,14 @@ const Projects = () => {
       <ThemeProvider theme={theme}>
         <Grid item xs={12}>
           <Typography variant="h2" className={classes.deadCenterColumn}>
-            <div>Projects</div>
-            <div>¯¯¯</div>
+            <div className={classes.headerText}>
+              <div>Projects</div>
+              <img
+                src="./images/line.png"
+                alt="solid line"
+                style={{ width: "70px", height: "10px" }}
+              />
+            </div>
           </Typography>
         </Grid>
 

@@ -1,13 +1,7 @@
 import React from "react";
 import "./App.css";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import {
-  makeStyles,
-  createMuiTheme,
-  ThemeProvider,
-  responsiveFontSizes,
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 import Back from "./Back";
 
@@ -32,9 +26,6 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
-
 const Welcome = () => {
   const classes = useStyles();
   return (
@@ -49,16 +40,19 @@ const Welcome = () => {
         xs={12}
       >
         <Back />
-        <Grid item xs={8}>
-          <ThemeProvider theme={theme}>
-            <Typography variant="h2" className={classes.deadCenterColumn}>
-              <div>
-                Hi, I'm{" "}
-                <span style={{ color: "#e31b6d" }}>Samuel Greenwald.</span>
-                <br></br> I'm a full-stack web developer.
-              </div>
-            </Typography>
-          </ThemeProvider>
+        <Grid item xs={7}>
+          <div
+            className={"openSans"}
+            style={{
+              textAlign: "center",
+              color: "white",
+              fontSize: "max(3vw, 30px)",
+            }}
+          >
+            Hi, I'm <span style={{ color: "#e31b6d" }}>Samuel Greenwald.</span>
+            <br></br>
+            I'm a full-stack web developer.
+          </div>
 
           <div className={classes.deadCenterRow}>
             <Link to="about" spy={true} smooth={true} duration={500}>

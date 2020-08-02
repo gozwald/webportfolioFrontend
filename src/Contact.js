@@ -18,6 +18,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
+  headerText: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "40px",
+  },
   deadCenterRow: {
     display: "flex",
     flexDirection: "row",
@@ -108,8 +114,14 @@ const Contact = () => {
             variant="h2"
             className={classes.deadCenterColumn}
           >
-            <div>Contact</div>
-            <div>¯¯¯</div>
+            <div className={classes.headerText}>
+              <div>Contact</div>
+              <img
+                src="./images/line.png"
+                alt="solid line"
+                style={{ width: "70px", height: "10px", filter: "invert(1)" }}
+              />
+            </div>
           </Typography>
           <Typography
             style={{ color: "turquoise" }}
