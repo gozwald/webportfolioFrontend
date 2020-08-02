@@ -120,24 +120,23 @@ const Contact = () => {
             </div>
           </Typography>
           <Typography
-            style={{ color: "turquoise" }}
+            style={{ color: "turquoise", padding: "30px" }}
             className={classes.deadCenterColumn}
           >
-            <p>Something on your mind?</p>
-            <br></br>
+            Something on your mind?
           </Typography>
           <div className={classes.deadCenterColumn}>
-            <div class="login-box">
+            <div className="login-box">
               <form name="contact" onSubmit={handleSubmit}>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="text" name="name" required />
                   <label>Name</label>
                 </div>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="email" name="email" required />
                   <label>Email</label>
                 </div>
-                <div class="user-box">
+                <div className="user-box">
                   <textarea
                     id="comment"
                     placeholder="Your message goes here!"

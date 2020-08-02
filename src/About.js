@@ -9,6 +9,9 @@ import {
   responsiveFontSizes,
 } from "@material-ui/core/styles";
 import { InView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const useStyles = makeStyles(() => ({
   deadCenterColumn: {
@@ -91,35 +94,51 @@ const About = () => {
       </Grid>
       <Grid container item xs={10} style={{ paddingBottom: "6vh" }}>
         <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
-          <img className={classes.desImages} alt="me" src="/images/draw.png" />
-          <div>
-            <b>Detail Oriented</b>
+          <div data-aos="zoom-in-right">
+            <img
+              className={classes.desImages}
+              alt="me"
+              src="/images/draw.png"
+            />
+            <div>
+              <b>Detail Oriented</b>
+            </div>
           </div>
         </Grid>
         <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
-          <img
-            className={classes.desImages}
-            alt="me"
-            src="/images/search.png"
-          />
-          <div>
-            <b>Resourceful</b>
+          <div data-aos="zoom-in" data-aos-delay="100">
+            <img
+              className={classes.desImages}
+              alt="me"
+              src="/images/search.png"
+            />
+            <div>
+              <b>Resourceful</b>
+            </div>
           </div>
         </Grid>
         <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
-          <img className={classes.desImages} alt="me" src="/images/idea.png" />
-          <div>
-            <b>Analytical</b>
+          <div data-aos="zoom-in" data-aos-delay="200">
+            <img
+              className={classes.desImages}
+              alt="me"
+              src="/images/idea.png"
+            />
+            <div>
+              <b>Analytical</b>
+            </div>
           </div>
         </Grid>
         <Grid item sm={3} xs={6} className={classes.deadCenterColumn}>
-          <img
-            className={classes.desImages}
-            alt="me"
-            src="/images/agreement.png"
-          />
-          <div>
-            <b>Team Player</b>
+          <div data-aos="zoom-in-left" data-aos-delay="300">
+            <img
+              className={classes.desImages}
+              alt="me"
+              src="/images/agreement.png"
+            />
+            <div>
+              <b>Team Player</b>
+            </div>
           </div>
         </Grid>
       </Grid>
@@ -144,7 +163,7 @@ const About = () => {
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
-          <InView triggerOnce>
+          <InView threshold={0.4} triggerOnce>
             {({ inView, ref, entry }) => (
               <div style={{ width: "100%" }} ref={ref}>
                 {inView && (

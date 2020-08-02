@@ -76,9 +76,9 @@ const Projects = () => {
           <Grid className={classes.gridspacing} item sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/konami.gif" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Konami Code!</b>
@@ -99,9 +99,9 @@ const Projects = () => {
           <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/cookbook.png" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Epic Cookbook</b>
@@ -122,9 +122,9 @@ const Projects = () => {
           <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/revyou.png" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Revyou (Chrome Extension)</b>
@@ -147,9 +147,9 @@ const Projects = () => {
           <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/skoli.png" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Skoliosis Organization</b>
@@ -168,12 +168,12 @@ const Projects = () => {
               </Card>
             </div>
           </Grid>
-          <Grid className={classes.gridspacing} xs={12} sm={6} md={4}>
+          <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/videoplayer.png" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Custom HTML5 Player</b>
@@ -192,12 +192,12 @@ const Projects = () => {
               </Card>
             </div>
           </Grid>
-          <Grid className={classes.gridspacing} xs={12} sm={6} md={4}>
+          <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
-                <div class="bg">
+                <div className="bg">
                   <img src="/images/lovit19.png" alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <div className="backcontainer">
                       <div>
                         <b>Care Package Site</b>
