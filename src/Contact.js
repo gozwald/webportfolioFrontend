@@ -50,11 +50,7 @@ theme = responsiveFontSizes(theme);
 const Contact = () => {
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
+  const handleClose = (e) => {
     setOpen(false);
   };
 
@@ -76,7 +72,7 @@ const Contact = () => {
       .then((response) => response.json())
       .then((data) => console.log(data));
     e.target.reset();
-    handleOpen();
+    setOpen(true);
   };
 
   const classes = useStyles();
