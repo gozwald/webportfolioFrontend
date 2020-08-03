@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navbar = ({ home, about, projects, contact }) => {
   return (
     <>
-      <ul className="menu">
+      <ul className="menu" style={{ fontFamily: "Open Sans,sans-serif" }}>
         <li>
           <Link to="home" spy={true} smooth={true} duration={500}>
             <div className={home ? "active" : ""}>Home</div>

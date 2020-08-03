@@ -61,7 +61,10 @@ const Projects = () => {
       <ThemeProvider theme={theme}>
         <Grid item xs={12}>
           <Typography variant="h2" className={classes.deadCenterColumn}>
-            <div className={classes.headerText}>
+            <div
+              className={classes.headerText}
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+            >
               <div>Projects</div>
               <img
                 src="./images/line.png"
@@ -79,7 +82,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/konami.gif" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Konami Code!</b>
                       </div>
@@ -102,7 +108,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/cookbook.png" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Epic Cookbook</b>
                       </div>
@@ -125,7 +134,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/revyou.png" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Revyou (Chrome Extension)</b>
                       </div>
@@ -150,7 +162,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/skoli.png" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Skoliosis Organization</b>
                       </div>
@@ -174,7 +189,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/videoplayer.png" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Custom HTML5 Player</b>
                       </div>
@@ -198,7 +216,10 @@ const Projects = () => {
                 <div className="bg">
                   <img src="/images/lovit19.png" alt="" />
                   <div className="overlay">
-                    <div className="backcontainer">
+                    <div
+                      className="backcontainer"
+                      style={{ fontFamily: "Open Sans,sans-serif" }}
+                    >
                       <div>
                         <b>Care Package Site</b>
                       </div>

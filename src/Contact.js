@@ -120,13 +120,20 @@ const Contact = () => {
             </div>
           </Typography>
           <Typography
-            style={{ color: "turquoise", padding: "30px" }}
+            style={{
+              color: "turquoise",
+              padding: "30px",
+              fontFamily: "Open Sans,sans-serif",
+            }}
             className={classes.deadCenterColumn}
           >
             Something on your mind?
           </Typography>
           <div className={classes.deadCenterColumn}>
-            <div className="login-box">
+            <div
+              className="login-box"
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+            >
               <form name="contact" onSubmit={handleSubmit}>
                 <div className="user-box">
                   <input type="text" name="name" required />
@@ -184,7 +191,12 @@ const Contact = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <div style={{ padding: "30px" }}>
+                  <div
+                    style={{
+                      padding: "30px",
+                      fontFamily: "Open Sans,sans-serif",
+                    }}
+                  >
                     <b>Thanks!</b> <br></br>We appreciate that you’ve taken the
                     time to write us. We’ll get back to you very soon.
                   </div>

@@ -42,11 +42,11 @@ const Welcome = () => {
         <Back />
         <Grid item xs={7}>
           <div
-            className={"openSans"}
             style={{
               textAlign: "center",
               color: "white",
               fontSize: "max(3vw, 30px)",
+              fontFamily: "Open Sans,sans-serif",
             }}
           >
             Hi, I'm <span style={{ color: "#e31b6d" }}>Samuel Greenwald.</span>
@@ -56,7 +56,10 @@ const Welcome = () => {
 
           <div className={classes.deadCenterRow}>
             <Link to="about" spy={true} smooth={true} duration={500}>
-              <span className="ghost-button-semi-transparent">
+              <span
+                className="ghost-button-semi-transparent"
+                style={{ fontFamily: "Open Sans,sans-serif" }}
+              >
                 LET'S GO DEEPER
               </span>
             </Link>

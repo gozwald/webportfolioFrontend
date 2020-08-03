@@ -81,7 +81,10 @@ const About = () => {
       <Grid item xs={12}>
         <ThemeProvider theme={theme}>
           <Typography variant="h2" className={classes.deadCenterColumn}>
-            <div className={classes.headerText}>
+            <div
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+              className={classes.headerText}
+            >
               <div>About</div>
               <img
                 src="./images/line.png"
@@ -100,7 +103,7 @@ const About = () => {
               alt="me"
               src="/images/draw.png"
             />
-            <div>
+            <div style={{ fontFamily: "Open Sans,sans-serif" }}>
               <b>Detail Oriented</b>
             </div>
           </div>
@@ -112,7 +115,7 @@ const About = () => {
               alt="me"
               src="/images/search.png"
             />
-            <div>
+            <div style={{ fontFamily: "Open Sans,sans-serif" }}>
               <b>Resourceful</b>
             </div>
           </div>
@@ -124,7 +127,7 @@ const About = () => {
               alt="me"
               src="/images/idea.png"
             />
-            <div>
+            <div style={{ fontFamily: "Open Sans,sans-serif" }}>
               <b>Analytical</b>
             </div>
           </div>
@@ -136,7 +139,7 @@ const About = () => {
               alt="me"
               src="/images/agreement.png"
             />
-            <div>
+            <div style={{ fontFamily: "Open Sans,sans-serif" }}>
               <b>Team Player</b>
             </div>
           </div>
@@ -151,11 +154,18 @@ const About = () => {
               src="/images/me.webp"
             />
 
-            <Typography variant="h4" className={classes.deadCenterColumn}>
+            <Typography
+              variant="h4"
+              className={classes.deadCenterColumn}
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+            >
               What is this human?
             </Typography>
             <br></br>
-            <div className={classes.aboutmeText}>
+            <div
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+              className={classes.aboutmeText}
+            >
               My name is Sam and I come from Toronto, Canada. <br></br> I'm a
               junior full stack web developer on a mission to get dirty hands
               and squeaky clean code.
@@ -167,7 +177,10 @@ const About = () => {
             {({ inView, ref, entry }) => (
               <div style={{ width: "100%" }} ref={ref}>
                 {inView && (
-                  <div className="skillscontainer">
+                  <div
+                    className="skillscontainer"
+                    style={{ fontFamily: "Open Sans,sans-serif" }}
+                  >
                     <ul>
                       <li className="html">HTML / CSS</li>
                       <li className="react">React</li>
