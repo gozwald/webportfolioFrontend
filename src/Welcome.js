@@ -45,7 +45,7 @@ const Welcome = () => {
             style={{
               textAlign: "center",
               color: "white",
-              fontSize: "max(3vw, 30px)",
+              fontSize: "max(3vw, 25px)",
               fontFamily: "Open Sans,sans-serif",
             }}
           >

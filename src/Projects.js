@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     padding: "40px",
+    "@media (max-width: 1000px)": {
+      padding: "0 0 30px 0",
+    },
   },
   mainContainer: {
     padding: "90px",
