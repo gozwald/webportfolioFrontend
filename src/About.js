@@ -148,11 +148,7 @@ const About = () => {
       <Grid container item xs={12} md={10}>
         <Grid item xs={12} md={4}>
           <div className={classes.deadCenterColumn}>
-            <img
-              className={classes.profilePic}
-              alt="me"
-              src="/images/me.webp"
-            />
+            <img className={classes.profilePic} alt="me" src="/images/me.png" />
 
             <Typography
               variant="h4"

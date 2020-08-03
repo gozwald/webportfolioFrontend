@@ -27,15 +27,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   gridspacing: {
+    display: "flex",
     padding: "10px",
   },
   cardprop: {
     display: "flex",
-    height: "250px",
     width: "100%",
-    "@media (max-width: 1000px)": {
-      height: "200px",
-    },
+    height: "100%",
   },
   headerText: {
     display: "flex",
