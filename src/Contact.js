@@ -110,7 +110,10 @@ const Contact = () => {
             variant="h2"
             className={classes.deadCenterColumn}
           >
-            <div className={classes.headerText}>
+            <div
+              className={classes.headerText}
+              style={{ fontFamily: "Open Sans,sans-serif" }}
+            >
               <div>Contact</div>
               <img
                 src="./images/line.png"
