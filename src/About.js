@@ -37,6 +37,7 @@ const useStyles = makeStyles(() => ({
   profilePic: {
     paddingBottom: "3vh",
     width: "250px",
+    height: "250px",
     "@media (max-width: 820px)": {
       padding: "30px",
     },
