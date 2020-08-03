@@ -221,6 +221,9 @@ li.slider {
   .menu {
     height: 45px;
   }
+  .menu div {
+    font-size: 15px;
+  }
   .skillscontainer {
     width: 100%;
     height: 100%;
