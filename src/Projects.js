@@ -99,7 +99,7 @@ const Projects = () => {
                       <div>HTML / CSS</div>
                       <br></br>
                       <div>Github Repo:</div>
-                      <div>https://github.com/gozwald/konami</div>
+                      <div>github.com/gozwald/konami</div>
                     </div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const Projects = () => {
                       <div>HTML / CSS</div>
                       <br></br>
                       <div>Github Repo:</div>
-                      <div>https://github.com/gozwald/CookBook</div>
+                      <div>github.com/gozwald/CookBook</div>
                     </div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const Projects = () => {
                       <div>HTML / CSS</div>
                       <br></br>
                       <div>Github Repo:</div>
-                      <div>https://github.com/gozwald/revyouBackend</div>
+                      <div>github.com/gozwald/revyouBackend</div>
                     </div>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const Projects = () => {
                       <div>Bootstrap</div>
                       <br></br>
                       {/* <div>Github Repo:</div>
-                    <div>https://github.com/gozwald/revyouBackend</div> */}
+                    <div>github.com/gozwald/revyouBackend</div> */}
                     </div>
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const Projects = () => {
                       <div>React</div>
                       <br></br>
                       <div>Github Repo:</div>
-                      <div>https://github.com/gozwald/videoapp</div>
+                      <div>github.com/gozwald/videoapp</div>
                     </div>
                   </div>
                 </div>
@@ -235,7 +235,7 @@ const Projects = () => {
                       <div>Express</div>
                       <br></br>
                       <div>Github Repo:</div>
-                      <div>https://github.com/gozwald/shopping_cms</div>
+                      <div>github.com/gozwald/shopping_cms</div>
                     </div>
                   </div>
                 </div>
