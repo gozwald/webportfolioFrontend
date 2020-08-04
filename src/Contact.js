@@ -90,7 +90,7 @@ const Contact = () => {
         }}
       >
         <img
-          src="./images/arrowdown.webp"
+          src="./images/arrowdown.png"
           alt="downarrow"
           style={{
             width: "100%",
