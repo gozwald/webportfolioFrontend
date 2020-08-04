@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
   gridspacing: {
     display: "flex",
     padding: "10px",
+    "@media (max-width: 600px)": {
+      minHeight: "230px",
+    },
   },
   cardprop: {
     display: "flex",
@@ -76,8 +79,8 @@ const Projects = () => {
           </Typography>
         </Grid>
 
-        <Grid container item xs={12} className={classes.deadCenterRow}>
-          <Grid className={classes.gridspacing} item sm={6} md={4}>
+        <Grid container className={classes.deadCenterRow}>
+          <Grid className={classes.gridspacing} item xs={12} sm={6} md={4}>
             <div data-aos="fade-up">
               <Card className={classes.cardprop}>
                 <div className="bg">
