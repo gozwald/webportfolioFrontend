@@ -7,7 +7,7 @@ import Back from "./Back";
 
 const useStyles = makeStyles(() => ({
   home: {
-    // display: "flex",
+    display: "flex",
     height: "100vh",
     width: "100vw",
   },
@@ -39,7 +39,20 @@ const Welcome = () => {
         item
         xs={12}
       >
+        {/* <div
+          style={{
+            position: "absolute",
+            top: 0,
+            right: 0,
+            bottom: 0,
+            color: "white",
+            padding: "40px",
+          }}
+        >
+          <div className="btn">CV</div>
+        </div> */}
         <Back />
+
         <Grid item xs={7}>
           <div
             style={{
